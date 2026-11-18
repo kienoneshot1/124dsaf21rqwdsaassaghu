@@ -12,4 +12,17 @@ getgenv().Config = {
     },
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/mewAI36/occacbeta/refs/heads/main/Fully_CDK"))()
+task.spawn(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/mewAI36/occacbeta/refs/heads/main/Fully_CDK"))()
+end)
+
+task.wait(5)
+
+if setfpscap then
+    setfpscap(20)
+    task.spawn(function()
+        while task.wait(15) do
+            setfpscap(20)
+        end
+    end)
+end
