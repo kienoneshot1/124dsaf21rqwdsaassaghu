@@ -1,24 +1,28 @@
-repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
-
-task.spawn(function()
-    while true do
-        if setfpscap then setfpscap(18) end
-        task.wait(10)
-    end
-end)
-
 getgenv().Config = {
-    ["Team"] = "Pirates",
-    ["Hop Near"] = true,
-    ["Yama"] = true,
-    ["Tushita"] = true,
-    ["Cursed Dual Katana"] = true,
 
-    ["Hop CDK"] = {
-        ["Raid Castle"] = true,
-        ["Soul Reaper"] = true,
-        ["Big Mom"] = true,
+    ["Team"] = "Pirates", -- "Marines"
+
+    ["Race"] = { "Ghoul" },
+    ["Upgrade Race"] = true,
+
+    ["Pull Lever"] = true,
+    ["Auto Mirror Fractal"] = true,
+    ["Auto Valkyrie Helm"] = true,
+
+    ["Farm Fragment"] = {
+        ["Enable"] = true,
+        ["Fragment"] = 10000,
+        ["Boss"] = "Tyrant of the Skies",
     },
+
+    ["Webhook"] = {
+        ["Enable"] = true,
+        ["Url"] = "",
+        ["Type"] = { "Race", "Pull Lever", "MM" },
+    },
+
+    ["Method Farm Beli"] = "Mob", -- "Chest"
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/mewAI36/occacbeta/refs/heads/main/Fully_CDK"))()
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mewAI36/occacbeta/refs/heads/main/6V3_PullLever"))()
