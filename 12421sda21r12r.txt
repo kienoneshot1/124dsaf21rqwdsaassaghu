@@ -19,7 +19,7 @@ Config = {
     Items = {
         -- Melees 
         AutoFullyMelees = true,
-        CursedDualKatana = true,
+        CursedDualKatana = false,
         MM = false,
         Saber = false,
         
