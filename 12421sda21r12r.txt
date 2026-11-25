@@ -1,33 +1,23 @@
+repeat task.wait() until game:IsLoaded() and game.Players.LocalPlayer 
+
+getgenv().Key = "6d2b6fef09afa7b6952503ba"
+getgenv().__BANANA_SCRIPT_ROUTE = "kaigod"
+
 getgenv().Config = {
-    ["Team"] = "Pirates",
-    ["Hop Near"] = true,
-    ["Yama"] = true,
-    ["Tushita"] = true,
-    ["Cursed Dual Katana"] = true,
-
-    ["Hop CDK"] = {
-        ["Raid Castle"] = true,
-        ["Soul Reaper"] = true,
-        ["Big Mom"] = true,
-    },
+    Team = "Pirates",
+    FastTween = true,
+    HopWhenIdle = true,
+    FpsBoost = true,
+    FpsCap = 20,
+    BlockAcc = false,
+    BlackScreen = false,
+    CursedDualKatana = true,
+    SoulGuitar = false,
+    FarmBoneForx2EXP = true,
+    WebhookEnabled = false,
+    WebhookUrl = "",
+    WebhookIntervalMinutes = 5
 }
+Config = getgenv().Config
 
-task.spawn(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/mewAI36/occacbeta/refs/heads/main/Fully_CDK"))()
-end)
-
-task.wait(5)
-
-_G.Config = {
-    UserID = "e8e35632-52b6-41a7-890b-b511cfa223d7",
-    discord_id = "1050063051644227685",
-    Note = "Pc"
-}
-
-for i = 1, 5 do
-    local s = pcall(function()
-        loadstring(game:HttpGet("https://cdn.yummydata.click/scripts/trackstatblox"))()
-    end)
-    if s then break end
-    task.wait(5)
-end
+return loadstring(game:HttpGet("https://banana-hub.xyz/loader/banana.lua"))()
