@@ -1,33 +1,15 @@
-script_key = "H5FHYX5iws9D0J2K9ncuWwhueEeDU3" -- Thay bằng key của bạn
-getgenv().version = "BF"
-getgenv().mode = "1" -- 1 for normal pc or emu 2 for linux user
-Config = {
-    Team = "Pirates",
-    FPS = 20,
-    Configuration = {
-        HopWhenIdle = true,
-        HopNear = true,
-        FpsBoost = true,
-        blackscreen = false,
-        FastAttackMode = "Both"
-    },
-    Fruit ={
-        Sniper = true,
-        Fruit = {"Kitsune-Kitsune"},
-        EatFruitStore = false
-    },
-    Items = {
-        -- Melees 
-        AutoFullyMelees = true,
-        CursedDualKatana = false,
-        MM = false,
-        Saber = false,
-        
-        SoulGuitar = false
+getgenv().Config = {
+    ["Team"] = "Pirates",
+    ["Hop Near"] = true,
+    ["Yama"] = true,
+    ["Tushita"] = true,
+    ["Cursed Dual Katana"] = true,
 
+    ["Hop CDK"] = {
+        ["Raid Castle"] = true,
+        ["Soul Reaper"] = true,
+        ["Big Mom"] = true,
     },
-    Settings = {
-        StayInSea2UntilHaveDarkFragments = false
-    }
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hhl29042008-ops/a/refs/heads/main/sex"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mewAI36/occacbeta/refs/heads/main/Fully_CDK"))()
